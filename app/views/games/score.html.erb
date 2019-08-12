@@ -1,0 +1,14 @@
+<h1>Result</h1>
+
+
+<%if @include%>
+<%="Sorry but #{@word} can't be build out of #{@letters}"%>
+
+
+<% elsif @include && @exist%>
+<%="Sorry but #{@word} don't seem to be an English word..."%>
+
+
+<%else%>
+<%="Congratulation! #{@word} is a valid English word!"%>
+<%end%>
